@@ -8,8 +8,9 @@ describe('When using MergeSort on an unsorted Array', function () {
 	beforeEach(function() {
 		var unsortedArray = [10, 8, 3, 1, 7, 5, 9, 6];
 		unsortedLength = unsortedArray.length;
-		mergeSort(unsortedArray, 0, unsortedArray.length - 1);
-		sortedArray = unsortedArray;
+		
+		sortedArray = mergeSort(unsortedArray, 0, unsortedArray.length - 1);
+		console.log(sortedArray);
 	});
 
 	it('the sorted array will not be null.', function () {
